@@ -383,6 +383,20 @@ Returns an executive inventory report generated only from imported assets.
 
 ---
 
+## Configuration
+
+Create a `.env` file from `.env.example` and provide a valid Groq API key.
+
+```bash
+cp .env.example .env
+```
+
+Then edit:
+
+```env
+GROQ_API_KEY=your_api_key_here
+```
+
 # Future Improvements
 
 * Authentication & RBAC
