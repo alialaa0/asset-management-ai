@@ -399,15 +399,16 @@ GROQ_API_KEY=your_api_key_here
 
 # Future Improvements
 
-* Authentication & RBAC
-* Multi-tenant support
-* Relationship graph visualization
-* CI/CD pipeline
-* Redis caching
-* Agentic LangChain workflow
-* Automated evaluation
-* Retrieval-Augmented Generation (RAG)
-* Expanded unit and integration tests
+Given additional development time, the following enhancements would further improve the project:
+
+- Add multi-tenant support to isolate assets between organizations.
+- Visualize asset relationships using an interactive graph.
+- Introduce Redis caching for frequently executed queries and reports.
+- Expand the LangChain layer into an agent capable of selecting tools dynamically.
+- Add support for certificate expiration monitoring and automated risk alerts.
+- Improve asset enrichment using additional contextual sources.
+- Extend reporting with downloadable PDF and CSV exports.
+- Add pagination and advanced filtering to AI-generated reports.
 
 ---
 
