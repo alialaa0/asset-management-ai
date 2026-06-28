@@ -1,0 +1,73 @@
+[
+    {
+        "id": "asset-001",
+        "type": "domain",
+        "value": "example.com",
+        "status": "active",
+        "source": "manual",
+        "tags": [
+            "production",
+            "critical"
+        ],
+        "metadata": {
+            "country": "US",
+            "registrar": "Cloudflare"
+        }
+    },
+    {
+        "id": "asset-002",
+        "type": "subdomain",
+        "value": "api.example.com",
+        "status": "active",
+        "source": "manual",
+        "tags": [
+            "api"
+        ],
+        "metadata": {
+            "service": "REST"
+        },
+        "parent": "asset-001"
+    },
+    {
+        "id": "asset-003",
+        "type": "ip_address",
+        "value": "192.168.1.10",
+        "status": "active",
+        "source": "shodan",
+        "tags": [
+            "internal"
+        ],
+        "metadata": {
+            "os": "Linux"
+        },
+        "parent": "asset-002"
+    },
+    {
+        "id": "asset-004",
+        "type": "service",
+        "value": "https",
+        "status": "active",
+        "source": "nmap",
+        "tags": [
+            "web"
+        ],
+        "metadata": {
+            "port": 443
+        },
+        "parent": "asset-003"
+    },
+    {
+        "id": "asset-005",
+        "type": "technology",
+        "value": "nginx",
+        "status": "active",
+        "source": "wappalyzer",
+        "tags": [
+            "web-server"
+        ],
+        "metadata": {
+            "version": "1.26.0"
+        },
+        "covers": "asset-004"
+    }
+]
